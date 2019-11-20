@@ -31,4 +31,4 @@
         payRequest.setPayTypeEnum(bestPayTypeEnum);
         PayResponse response = bestPayService.pay(payRequest);```
         
- 测试：<http://www.main.wast.club>
+ 测试：<http://www.main.wast.club> 如果访问失败，可能是服务器没开。
