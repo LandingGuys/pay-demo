@@ -33,7 +33,7 @@ public class IPayServiceImpl implements IPayService {
     public PayResponse create(String orderId, BigDecimal amount,BestPayTypeEnum bestPayTypeEnum) {
         //写入数据库
         PayRequest payRequest = new PayRequest();
-        payRequest.setOrderName("8009396-啦啦啦11");
+        payRequest.setOrderName("订单名称");
         payRequest.setOrderId(orderId);
         payRequest.setOrderAmount(amount.doubleValue());
         payRequest.setPayTypeEnum(bestPayTypeEnum);
