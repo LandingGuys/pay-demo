@@ -1,0 +1,38 @@
+spring:
+  profiles:
+    active: dev
+
+
+#spring:
+#    datasource:  数据库
+#        driver-class-name: *****
+#        username: ****
+#        password: *****
+#        url: jdbc:mysql://*****:3306/yymall?characterEncoding=utf-8&useSSL=false
+#    freemarker: 模板引擎
+#        settings:
+#            classic_compatible: true
+#    rabbitmq: 消息队列
+#        addresses: *****
+#        port: *****
+#        username: ****
+#        password: ****
+#mybatis:
+#    configuration:
+#        map-underscore-to-camel-case: true
+#    type-aliases-package: com.henu.pay.pojo
+#    mapper-locations: classpath:mapper/*.xml
+#wx:  微信配置
+#    AppId: *********   微信支付AppId
+#    MchId: ***********
+#    MchKey: ********   支付秘钥
+#    NotifyUrl: *********  通知地址
+#    ReturnUrl: *********  回调地址
+#
+#alipay:
+#    AppId: *******  支付宝AppId
+#    PrivateKey: ******  支付宝私钥
+#    AliPayPublicKey: ******  支付宝公钥
+#    NotifyUrl: *****  通知地址
+#    ReturnUrl: ****** 回调地址
+
