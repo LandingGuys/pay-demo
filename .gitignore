@@ -31,5 +31,5 @@ build/
 .vscode/
 
 ### application ###
-application-dev.yml
-application-pro.yml
+/application-dev.yml
+/application-pro.yml
