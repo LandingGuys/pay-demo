@@ -29,3 +29,7 @@ build/
 
 ### VS Code ###
 .vscode/
+
+### application ###
+application-dev.yml
+application-pro.yml
