@@ -62,7 +62,7 @@
             swal("问题内容不能为空~~~", "You clicked the button!", "warning");
             return;
         }
-        var link ="http://www.main.wast.club:8080/pay/create" + '?orderId='+orderId + '&amount='+amount+'&payType='+payType;
+        var link ="http://localhost:8080/pay/create" + '?orderId='+orderId + '&amount='+amount+'&payType='+payType;
         window.location.href=link;
     }
     function ali() {
@@ -77,7 +77,7 @@
             swal("问题内容不能为空~~~", "You clicked the button!", "warning");
             return;
         }
-        var link ="http://www.main.wast.club:8080/pay/create" + '?orderId='+orderId + '&amount='+amount+'&payType='+payType;
+        var link ="http://localhost:8080/pay/create" + '?orderId='+orderId + '&amount='+amount+'&payType='+payType;
         window.location.href=link;
     }
 

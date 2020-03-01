@@ -1,7 +1,8 @@
 package com.henu.pay.service;
 
+import com.henu.pay.pojo.PayInfo;
+import com.henu.pay.vo.ResponseVo;
 import com.lly835.bestpay.enums.BestPayTypeEnum;
-import com.lly835.bestpay.model.PayRequest;
 import com.lly835.bestpay.model.PayResponse;
 
 import java.math.BigDecimal;
@@ -15,7 +16,7 @@ public interface IPayService {
     /**
      * 创建/发起支付
      */
-    public PayResponse create(String orderId, BigDecimal amount, BestPayTypeEnum bestPayTypeEnum);
+    PayResponse create(String orderId, BigDecimal amount, BestPayTypeEnum bestPayTypeEnum);
 
     /**
      * 异步通知处理
@@ -23,4 +24,11 @@ public interface IPayService {
      * @return
      */
     String asyncNotify(String notifyData);
+
+    /**
+     * 查询支付记录（通过订单号）
+     * @param orderId
+     * @return
+     */
+    ResponseVo<PayInfo> queryByOrderId(String orderId);
 }
