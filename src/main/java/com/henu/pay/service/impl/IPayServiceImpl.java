@@ -71,6 +71,7 @@ public class IPayServiceImpl implements IPayService {
         }
         PayRequest payRequest = new PayRequest();
         payRequest.setOrderName("8009396-智慧药房");
+        payRequest.setOrderName("订单名称");
         payRequest.setOrderId(orderId);
         payRequest.setOrderAmount(amount.doubleValue());
         payRequest.setPayTypeEnum(bestPayTypeEnum);
