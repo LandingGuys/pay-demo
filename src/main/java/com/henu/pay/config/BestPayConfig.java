@@ -21,7 +21,7 @@ public class BestPayConfig {
     @Bean
     public BestPayService bestPayService(){
         WxPayConfig wxPayConfig=new WxPayConfig();
-<<<<<<< HEAD
+
         wxPayConfig.setAppId(wxAccountConfig.getAppId());
         wxPayConfig.setMchId(wxAccountConfig.getMchId());
         wxPayConfig.setMchKey(wxAccountConfig.getMchKey());
@@ -34,19 +34,6 @@ public class BestPayConfig {
         aliPayConfig.setAliPayPublicKey(alAccountConfig.getAliPayPublicKey());
         aliPayConfig.setNotifyUrl(alAccountConfig.getNotifyUrl());
         aliPayConfig.setReturnUrl(alAccountConfig.getReturnUrl());
-=======
-        wxPayConfig.setAppId("**********");
-        wxPayConfig.setMchId("********");
-        wxPayConfig.setMchKey("**********************");
-        wxPayConfig.setNotifyUrl("*********");
-
-        AliPayConfig aliPayConfig = new AliPayConfig();
-        aliPayConfig.setAppId("***************");
-        aliPayConfig.setPrivateKey("********")
-        aliPayConfig.setAliPayPublicKey("***********************");
-        aliPayConfig.setNotifyUrl("*******");
-        aliPayConfig.setReturnUrl("******************");
->>>>>>> e69ceaa0e4b70ce1fdeb329d0e3ee51fa1247f6e
 
         BestPayServiceImpl bestPayService = new BestPayServiceImpl();
         bestPayService.setWxPayConfig(wxPayConfig);
